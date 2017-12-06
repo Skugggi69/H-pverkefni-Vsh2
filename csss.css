@@ -1,0 +1,83 @@
+body{
+ background-color: orange;
+}
+
+.center{
+	text-align: center;
+}
+
+.border{
+	border:dotted black; 
+}
+
+
+
+/* Viðmið 37.5em = 600px */
+
+@media screen and (min-width: 37.5em) {/*ath! slaufusviga í sömu línu"*/
+	.kafli-1{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.adalgrein{
+		width: 100%
+	}
+	.vinstri , .haegri{
+		width: 50%
+	}
+	.myndabox{
+		flex-flow: row nowrap;
+	}
+
+}
+
+
+/* Viðmið 48em = 760px */
+
+@media screen and (min-width: 48em) {/*ath! slaufusviga í sömu línu"*/
+	.topnav{
+		order: 1;
+	}
+	header{
+		order:1;
+	}
+	.kafli-1{
+		order: 3;
+		flex-flow: row nowrap;
+	}
+	.adalgrein{
+		order: 2;
+		flex: 3 3 1em;
+	}
+	.vinstri{
+		order:1;
+		flex: 1 1 0;
+	}
+	 .haegri{
+		order:4;
+		flex: 1 1 0;
+	}
+	.topmenu{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+	.topmenu li{
+		border-width: 0 1px 0 1px;
+	}
+	.topmenu li:first-child {
+		border-width: 0 1px 0 1px;
+	}
+}
+
+/* Viðmið 60em = 960px / Tölvuskjái*/
+
+@media screen and (min-width: 60em){
+	body{
+		max-width: 60em;
+		margin: 0 auto;
+		background:#0884FF;
+	}
+
+
+}
